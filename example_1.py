@@ -7,13 +7,13 @@
 # Why does it not work?
 
 # The following is so that it works with Python 3 too
-from __future__ import print_function
+#from __future__ import print_function
 
 import numpy as np
 
 
 def sorted_random_array(n):
     x = np.random.random(n)
-    return x.sort()
+    return np.sort(x)
 
 print("Sorted random values: ", sorted_random_array(10))
